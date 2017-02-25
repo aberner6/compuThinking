@@ -81,8 +81,18 @@
 
 
 
-### 3 -- Repetition (Functions and Helpers), Organizing (Arrays, Objects and OOP), Data +, Structuring (Ideas), Sending (Data)
+### 3 -- Repetition (Loops, Functions and Helpers), Organizing (Arrays, Objects and OOP), Data +, Structuring (Ideas), Sending (Data)
 - Assignment from yesterday: bowl of concepts
+- Lovely Loops
+  - I'm repeating myself over and over again
+  - I want to make this evenly spaced and my fingers and brain are getting tired of writing ellipses forever
+    - [Loops to the rescue!](https://www.youtube.com/watch?v=cnRD9o6odjk&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=15)
+      - While to your rescue
+      - For to your (real) rescue!
+        - x = x+50
+        - x+=50
+        - x++
+  - **Exercise:** try making a pattern of repeated shapes. Can you play with the y axis? Color? Shape changing?
 - Functions
   - and passing information in different parts of your program
 - **Exercise:** make a "you" creature
