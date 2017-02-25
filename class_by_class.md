@@ -135,10 +135,27 @@
           - Try having spaces instead and you'll see
       - **Diagram:** How would you describe your favorite animal (or if you hate animals, then your favorite food or drink) as a thing with properties?
 - Organizing programs:
-  - Object oriented programming
+  - Writing constructor functions...
+    - We know how to write the literal object - the collection of "name-value" pairs - the curly brackets, etc.
+    - var thisSpecialThing = {
+        x:100,
+        y:50
+      }
+      - thisSpecialThing.x = 50
+      - Functions in javascript: function blah(){ }
+      - function Bubble (capital letter is CONVENTION)
+        - bubble = new Bubble() <- we see those parenthesis and know it is a function
+        - javascript looks for function called Bubble()
+      - function Bubble(){ //a template!
+          this.x = 100; //attaching x to the object
+          this.display() = function(){
+
+          }; //what happens there?
+        }
+        - IF you made a new object called Bubble, we would give it these special attributes!
     - Creature:
-      - Looks like
-      - Moves like
+      - Looks like: I'm going to write a function somewhere else that describe what it looks
+      - Moves like: Check in the move area!
     - "Playing god":
       - Many many creatures, all the same
       - How would we do this?
@@ -224,6 +241,8 @@ _Relevant videos, readings, inspiration:_
 ###### DAY 3:
 * Deeper dive:
   * If you are excited about organizing and controlling arrays, objects, structure of your programming...
+    * [What's an array?](https://www.youtube.com/watch?v=VIQoUghHSxU&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=20)
+    * [Organizing code a little better through Objects](https://www.youtube.com/watch?v=F3GeM_KrGjI&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=23)
     * An array of objects! [video tutorial 6.3](https://www.youtube.com/watch?v=pGkSHeEZLMU&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=22)
       * [Interactive Stripes](http://alpha.editor.p5js.org/projects/SJRI1mqC)
     * Adding and deleting from an array, `push()` and `splice()` [video tutorial. 6.5](https://www.youtube.com/watch?v=EyG_2AdHlzY&index=24&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
