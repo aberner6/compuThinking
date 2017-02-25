@@ -118,7 +118,7 @@
         - Instagram has a functionality that is encapsulated in some locationFunction() that will return just the images you need
       - Arrays and for loops: https://www.youtube.com/watch?v=RXWO3mFuW-I&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=21
     - **Diagram:** what's an array?
-  - Things with properties - object literals
+  - Things with properties - literal objects
     - I'm a human, defined as a female, brown hair, height, able to walk and talk
     - 2 different ways to define and express the properties of an object.
       - On the fly
