@@ -144,7 +144,7 @@
       - thisSpecialThing.x = 50
       - Functions in javascript: function blah(){ }
       - function Bubble (capital letter is CONVENTION)
-        - bubble = new Bubble() <- we see those parenthesis and know it is a function
+        - bubble = **new** Bubble() <- we see those parenthesis and know it is a function
         - javascript looks for function called Bubble()
       - function Bubble(){ //a template!
           this.x = 100; //attaching x to the object
