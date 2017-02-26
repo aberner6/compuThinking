@@ -8,19 +8,36 @@
 - Intro to each other
 - Why program?
   - What program?
+    - p5 is built from Processing, which began in 2001
+    - Casey Reas and Ben Fry: the history of platforms to make programming interactive graphics easier and faster to program rather than heavy lifting to build them in C++ and Java
+      - And make programming more accessible for design and art students
+      - Inspired by Logo and BASIC and Design By Numbers
+    - Evolution to p5 means that Processing is now even more open and accessible - as it is online
+      - Still using syntax and conventions of Processing as much as possible
+      - But now built with Javascript (and HTML / CSS)
   - Why me?
+    - Make a game, animation, interactive interface
+    - Visualize data abstractly
+    - Sketching with code
+      - Write a line, test it out ("press play")
+      - What if...
+        - A circle disappeared every time I clicked on it
+        - A series of bubbles follow my face when I smile
+        - Depending on the amount of noise in the room the graphics are bright and busy or dark and calm
   - Me and who else?
+    - p5 and Processing are accessible and practical for a wide range of uses and "users"
   - **Diagram:** landscape of languages: which languages and for what?
-    - Processing, p5, Arduino - sketching with code - artists, interaction designers, scientists! Researchers!
-    - C - Processing
-    - Java - Processing
-    - HTML / CSS - front-end of websites (what you see)
-    - JavaScript - front-end action, analysis and tons of amazing libraries
+    - p5 is built in a language called Javascript but has some custom features for interaction and graphics that make it faster and easier to sketch with code
+    - Families:
+      - Processing, p5, Arduino - sketching with code - artists, interaction designers, scientists! Researchers!
+      - C - Processing
+      - Java - Processing
+      - HTML / CSS - front-end of websites (what you see)
+      - JavaScript - front-end action, analysis and tons of amazing libraries
+      - Python
+      - Ruby
     - Open frameworks - fast processing for interactive installations that take a lot of data in
-    - Ruby / php /
-    - Cinder
-    - max/msp data-flow
-    - Python / R - analyzing data
+    - MAX MSP data-flow
     - Grasshopper - architecture + computation
 - Fear in a Box
   - Put one in, take one out
@@ -30,8 +47,13 @@
   - Who's making it?
     - [p5.js working group mailing list](http://groups.google.com/forum/#!forum/p5xjs-working-group)
   - Getting set up + the editor "environment"
+    - A code editor is like a text editor but special for writing code
+    - We will use the official p5.js editor
   - p5 and the browser
     - **Diagram:** landscape of the web: how do we see things online?
+    - HTML is our backbone, Javascript (and p5.js library) make things interactive, CSS would help us style that page but we won't deal with it this week
+    - Let's look at the index.html file - just so you know, it links to our sketch.js file - but we leave that for now
+    - We will work in sketch.js
   - p5 - a library - what is a library?
     - 1 word that defines a series of actions / associations (like a dictionary)
     - **Diagram:** how do HTML / CSS / Javascript and its libraries go together?
@@ -40,6 +62,10 @@
   - How do we communicate?
     - Formulate & Represent
     - Speech, Drawing, Writing, Etc.
+      - Write left to right and put a space between each word
+      - Capitalize names of people and places
+      - Use punctuation!
+      - ALL CAPS MEANS SOMETHING
     - Communication to another:
       - Speech to Understanding (listening to understand)
       - When have you miscommunicated?
@@ -52,32 +78,121 @@
   - **Exercise:** How to draw a circle
     - Tell it to me
     - Tell it to me as if I am a computer
+      - No shortcuts - computers don't understand "how r u"
+      - Graph paper / geometry / starting from top left edge (0,0)
+      - Setup?
+      - Canvas?
+      - Draw?
     - Now let's write it in the sketch window in p5
       - A few notes:
         - It's called an ellipse
+          - p5 includes a few function to draw basic shapes - thus we have ellipse() - it is a "function" with "parameters"
+          - This is also a function: "createCanvas()"
+          - And these are parameters (800, 600);
+          - They go inside the function - these are the details of your description
         - Some things are turning pink - what do you think that means?
-        - The role of comments - these guys //
-        - Directions of x, y, radius, radius are inside of parenthesis
+          - Functions / built-in
+        - The role of comments - these guys // and these guys /* several lines*/
+        - Directions of x, y, radius, radius are inside of parenthesis - parameters
+        - Uppercase and lowercase mean different things to the computer
         - Semi colon - means "I'm done here!"
       - Before we press play, close eyes and imagine what we will see
+  - Setup and draw:
+    - Setup: canvas size, color mode, background - happens ONCE
+    - Draw: animation, change over time - ALWAYS RUNNING
   - **Exercise:** Draw a circle _in the center of the canvas_
     - (There is an easier way)
     - Width, height, shapes, color modes, and more - are defined in the library - so they will turn pink - and this means we can reference them directly!
       - A few notes:
         - Watch your Ps, Qs, and...
         - Grammar and programming
-        - "Syntax" to watch out for: parenthesis, commas, semi-colons
-        - Read your debugging console
+          - "Syntax" to watch out for: parenthesis, commas, semi-colons
+            - Parameters
+            - Functions
+            - background (0, 0, 0);
+        - Style / formatting: use the conventions. Command t to clean it up
+        - Read your debugging console (gear icon top right of sketch - or View -> Developer -> Javascript Console if in Chrome)
+          - It's trying to help you!
+  - Run / alter / break / enhance / reshape - try tons of Examples!
+    - One step at a time - things will be less tangled and you will be able to find the errors more quickly. Write a bit, test, write a bit, test
+    - Small successes :)
+  - **Exercise:** Draw a circle if your mouse is pressed
+    - How do I know about mousePressed? Check the online reference
   - **Exercise:** Draw a rectangle
-    - Check the online reference
-  - Setup and draw:
-    - Setup: canvas size, color mode, background - happens ONCE
-    - Draw: animation, change over time - ALWAYS RUNNING
+    - How do I say rectangle to computer? Check the online reference
+  - **Exercise:** Draw an arc
+    - How do I say degrees / radians and start and stop? Check online reference
+  - Variable scope: variable created inside curly braces { } only exists in there. Global variables are above setup. Local variables are inside curlies.
 - Programming life:
   - **Diagram:** Think of how you got to school today. Try to note how many times you could have expressed AND/OR experienced computation
+    - Order of operations: like reading a novel - this, then that, then that etc.
+    - Drawing order: like layers in Illustrator or when you paint a canvas - again - this, then that, then that
+- Favorite errors?
+  - Mysteries or puzzles
 - Wrap up: what did we do today?
   - **Diagram:** what's p5 and how do we work with it? What does computational thinking mean to you?
-  - Bowl of concepts
+  - Bowl of concepts (operations, variables, etc.)
+
+
+
+### 2 - Debugging, Events (mouse, keys), Shapes (contours, vertices, curves), Text (fonts), Color (RGB, HSB), Blends
+- Assignment from yesterday: bowl of concepts
+- Debugging: ah, the mysteries :)
+  - Order of operations: like reading a novel - this, then that, then that etc.
+  - Drawing order: like layers in Illustrator or when you paint a canvas - again - this, then that, then that
+  - Variable scope: variable created inside curly braces { } only exists in there. Global variables are above setup. Local variables are inside curlies.
+  - One step at a time - things will be less tangled and you will be able to find the errors more quickly. Write a bit, test, write a bit, test
+  - Small successes :)
+  - "Syntax" to watch out for: parenthesis, commas, semi-colons, capitalization, spacing
+  - Did the console help you?
+  - Parameters - inside parenthesis
+  - Functions - ()
+  - Graph paper / geometry / starting from top left edge (0,0)
+  - Reading the reference
+- Variables
+  - Store a value so it can be used later - many times - without you having to state it again
+  - If you're typing a number in a lot of times / places, make it a variable
+    - Reuse same values
+    - Change it locally
+    - Name it: var x; //this means new variable
+    - Give it a value: x = 12; //references the one above
+    - Do it all in one go: var x = 12; //make a new variable and give it 12
+      - Careful of the order and scope - who can see what?
+    - Built in variables - the parameters from your canvas size - width and height
+    - Repetition - for loops - concept for tonight and tomorrow
+- Events
+  - Continuous input - must run in draw() so we are always listening
+  - frameCount
+  - mouseX and mouseY
+  - background - painting over each frame or not?
+  - pmouseX and pmouseY: the most recent position
+  - dist()
+  - easing
+  - mouseIsPressed()
+  - if() and else () - conditions
+  - Logic - < > <- && || true and false
+  - keyIsPressed - this is momentary
+    - key - this keeps its value
+    - keyCode
+  - touchIsDown
+    - touchX and touchY
+- map()
+  - My favorite function :)
+  - Values are between 0 and width of screen (mouseX, for example)
+  - We "map" them to 0 to 5
+- Shapes
+  - Vertex... beginShape(); then vertex(); then endShape();
+    - endShape(CLOSE);
+- Text
+- Color
+  - Order of operations
+  - noFill()
+  - noStroke()
+  - RGB
+  - RGBA (transparency - alpha channel)
+- Blends
+- Translate / rotate / scale
+  - Push / pop
 
 
 
